@@ -1,0 +1,125 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sudoku-app {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #222;
+  border-radius: 12px;
+  padding: 2rem 1rem 1.5rem 1rem;
+  box-shadow: 0 2px 16px #0004;
+}
+.sudoku-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.sudoku-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.sudoku-row {
+  display: flex;
+}
+.sudoku-cell {
+  width: 2.2em;
+  height: 2.2em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2px;
+  border: 1px solid #888;
+  background: #fff;
+  color: #222;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.2s;
+}
+.sudoku-cell:disabled {
+  background: #e0ffe0;
+  color: #222;
+  border: 1.5px solid #4caf50;
+}
+.sudoku-cell.original {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #666;
+  font-weight: bold;
+}
+.sudoku-cell.original:disabled {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #666;
+}
+.sudoku-row:nth-child(3n) .sudoku-cell {
+  border-bottom: 2.5px solid #888;
+}
+.sudoku-cell:nth-child(3n) {
+  border-right: 2.5px solid #888;
+}
+.error {
+  color: #ff5252;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  background: rgba(255, 82, 82, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ff5252;
+}
+.instructions {
+  margin-top: 1rem;
+  color: #bbb;
+  font-size: 0.95em;
+}
+
+.sudoku-grid.unsolvable {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.sudoku-grid.unsolvable .sudoku-cell {
+  background: #ffebee;
+  border-color: #ff5252;
+}
