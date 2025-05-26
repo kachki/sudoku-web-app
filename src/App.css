@@ -43,33 +43,33 @@
 
 .sudoku-app {
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background: #222;
   border-radius: 12px;
-  padding: 2rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   box-shadow: 0 2px 16px #0004;
 }
 .sudoku-controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .sudoku-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 .sudoku-row {
   display: flex;
 }
 .sudoku-cell {
-  width: 2.2em;
-  height: 2.2em;
-  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  font-size: 1.3em;
   text-align: center;
-  margin: 2px;
+  margin: 1px;
   border: 1px solid #888;
   background: #fff;
   color: #222;
@@ -109,9 +109,9 @@
   border: 1px solid #ff5252;
 }
 .instructions {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   color: #bbb;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
 .sudoku-grid.unsolvable {
