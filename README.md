@@ -77,12 +77,6 @@ yarn dev
 
 ## 📸 Screenshots
 
-### Sudoku Board UI
-![Sudoku Board](assets/screenshot1.png)
-
-### Game in Action
-![Solver Running](assets/board-demo.png)
-
 <h3>Sudoku Board UI</h3>
 <img src="assets/screenshot1.png" alt="Sudoku Board" width="400"/>
 
