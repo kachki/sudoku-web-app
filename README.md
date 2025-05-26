@@ -83,5 +83,11 @@ yarn dev
 ### Game in Action
 ![Solver Running](assets/board-demo.png)
 
+<h3>Sudoku Board UI</h3>
+<img src="assets/screenshot1.png" alt="Sudoku Board" width="400"/>
+
+<h3>Game in Action</h3>
+<img src="assets/board-demo.png" alt="Solver Running" width="400"/>
+
 
 

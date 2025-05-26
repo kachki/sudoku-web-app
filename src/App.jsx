@@ -91,7 +91,7 @@ function App() {
     for (const { row, col } of emptyCells) {
       newGrid[row][col] = solutionGrid[row][col].toString()
       setGrid([...newGrid])
-      await new Promise(resolve => setTimeout(resolve, 50)) // 50ms delay between each cell
+      await new Promise(resolve => setTimeout(resolve, 20)) // 50ms delay between each cell
     }
 
     setSolvingAnimation(false)
